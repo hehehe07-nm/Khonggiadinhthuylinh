@@ -1,0 +1,273 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Không gia đình - Hector </title>
+  <style>
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== COLOR PALETTE ===== */
+:root {
+  --paper: #F7F5E9;
+  --olive: #6B8E23;
+  --gold: #D4B24C;
+  --brown: #6F4E37;
+  --shadow: rgba(0,0,0,0.12);
+}
+
+/* ===== BASE ===== */
+html {
+  font-family: 'Libre Baskerville', serif;
+  background: var(--paper);
+  color: #3C280D;
+  line-height: 1.8;
+}
+
+body {
+   max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+
+  background: linear-gradient(
+  to bottom,
+  #DCEFF5,
+  #F7F5E9,
+  #E6C85C
+)
+}
+
+/* HEADER 2 cột */
+.book-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 40px;
+  margin-bottom: 60px;
+  background: linear-gradient(
+  180deg,
+  #F0F8FF,
+  #E6F2F7,
+  #F7F5E9
+);
+  border: 1px solid #e2dfd0;
+}
+
+/* Ảnh bìa */
+.book-cover img {
+  width: 220px;
+  border: 1px solid #cfcbb8;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+  filter: sepia(10%);
+}
+
+/* Thông tin sách */
+.book-info h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.book-info h3 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--brown);
+  margin-bottom: 15px;
+}
+
+.book-info .subtitle {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .book-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book-cover img {
+    width: 180px;
+  }
+}
+
+/* ===== SECTION ===== */
+section {
+  padding: 35px 30px;
+  margin-bottom: 40px;
+  border-left: 4px solid var(--olive);
+ background: linear-gradient(
+  180deg,
+  #F0F8FF,
+  #E6F2F7,
+  #F7F5E9
+);
+
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #334506 ;
+}
+
+section p {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  text-indent: 20px ;
+}
+
+/* ===== IMAGE ===== */
+section img {
+  width: 100%;
+  margin: 25px 0;
+  border: 1px solid #ddd;
+  filter: sepia(15%);
+}
+
+/* ===== AUTHOR ===== */
+.author {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-left: 4px solid var(--gold);
+}
+
+.author img {
+  width: 160px;
+  border: 1px solid #ccc;
+  filter: grayscale(100%);
+}
+
+.author-info h3 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.author-info p {
+  font-size: 1.05rem;
+}
+
+/* ===== QUOTE ===== */
+blockquote {
+  margin-top: 20px;
+  padding: 20px 25px;
+  border-left: 4px solid var(--brown);
+  font-style: italic;
+  Background-color: #d6c3a5;
+  color: #472e07 ;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--brown);
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.3rem;
+  }
+  section h2 {
+    font-size: 1.7rem;
+  }
+  .author {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+<body>
+<header class="book-header">
+  <div class="book-cover">
+    <img src="ảnh bìa.jpg " alt="Không gia đình">
+  </div>
+
+  <div class="book-info">
+    <h1>Không gia đình</h1>
+    <h3>Hector Malot</h3>
+    <p class="subtitle">
+      Tác phẩm văn học nhân văn kinh điển của Pháp
+    </p>
+  </div>
+</header>
+<section class="author">
+  <img src="tác giả.jpg " alt="Hector Malot">
+  <div class="author-info">
+    <h3>Hector Malot (1830 – 1907)</h3>
+    <p>
+      Hector Malot là nhà văn Pháp nổi tiếng với những tác phẩm
+      viết cho thiếu nhi và thanh thiếu niên. Văn chương của ông
+      giàu tính nhân văn, đề cao lòng nhân ái, sự kiên cường
+      và giá trị của tình người.
+    </p>
+
+    <div class="highlight">
+      “Không gia đình” là tác phẩm tiêu biểu nhất của Hector Malot,
+      để lại dấu ấn sâu đậm trong lòng nhiều thế hệ độc giả trên
+      toàn thế giới.
+    </div>
+  </div>
+</section>
+<section>
+  <h2>1. Giới thiệu tác phẩm</h2>
+  <img src="ảnh bìa.jpg" alt="Remi">
+  <p>
+    <b>Không gia đình</b> là tiểu thuyết nổi tiếng của nhà văn Pháp 
+    <b>Hector Malot</b>. Tác phẩm kể về cậu bé Rémi – một đứa trẻ mồ côi,
+    phải lang thang khắp nơi để tìm kiếm mái ấm và tình thương.
+  </p>
+</section>
+
+<section>
+  <h2>2. Tóm tắt nội dung</h2>
+  <img src="ảnh.jpg" alt="trong quán rượu">
+  <p>
+   Không gia đình là tiểu thuyết nổi tiếng của Hector Malot kể về cuộc đời cậu bé Rémi – một đứa trẻ mồ côi bị bỏ rơi từ khi mới sinh. Rémi được bà Barberin, một người phụ nữ nghèo nhưng nhân hậu, đem về nuôi dưỡng. Tuổi thơ yên bình của cậu sớm chấm dứt khi gia đình Barberin rơi vào cảnh túng quẫn, buộc Rémi phải theo cụ Vitalis – một nghệ sĩ xiếc rong lang thang. <br> </p>
+
+   <p>Trong suốt hành trình phiêu bạt khắp nước Pháp, Rémi phải đối mặt với đói rét, bệnh tật và nhiều bất công của xã hội. Tuy nhiên, dưới sự dạy dỗ nghiêm khắc nhưng đầy tình thương của Vitalis, cậu học được cách lao động chân chính, tự lập và giữ gìn lòng tự trọng. Những mất mát, đặc biệt là cái chết của Vitalis, khiến Rémi sớm trưởng thành và thêm mạnh mẽ. <br></p>
+
+   <p>Không khuất phục trước số phận, Rémi tiếp tục hành trình tìm kiếm nguồn gốc của bản thân. Cuối cùng, nhờ lòng tốt và nghị lực sống, cậu tìm được gia đình thật sự. Tác phẩm ca ngợi tình người, lòng nhân ái và sức mạnh của niềm tin vào cuộc sống.</p>
+
+  </p>
+</section>
+
+<section>
+  <h2>3. Giá trị nhân văn</h2>
+  <p>
+    Không gia đình là tác phẩm thấm đẫm tinh thần nhân văn sâu sắc. Qua hành trình đầy gian khổ của Rémi, Hector Malot ca ngợi <strong> tình yêu thương giữa con người với con người</strong>, đặc biệt là tình cảm gia đình không chỉ được tạo nên bởi huyết thống mà còn bởi sự cảm thông và sẻ chia. <br></p>
+    <p>
+      Tác phẩm <strong>đề cao nghị lực sống, lòng tự trọng và tinh thần lao động chân chính</strong>, giúp con người vượt qua nghịch cảnh. Đồng thời, Không gia đình còn thể hiện niềm tin vào lòng nhân ái và công bằng, khẳng định rằng chỉ cần sống tốt, con người sẽ tìm thấy hạnh phúc và mái ấm đích thực.
+  </p>
+</section>
+
+<section>
+  <h2>4. Trích dẫn hay</h2>
+  <blockquote>
+    “Khi người ta có trái tim nhân hậu thì dù nghèo khổ,
+    người ta vẫn giàu có hơn tất cả.”
+  </blockquote>
+</section>
+
+<footer>
+  © 2025 – Website học văn | Thiết kế bởi Thân Thùy Linh 12a1 
+</footer>
+</body>
+</html>
